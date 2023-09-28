@@ -1,5 +1,8 @@
 [![Pub](https://img.shields.io/pub/v/miniplayer?color=2196F3)](https://pub.dev/packages/miniplayer)
 
+
+MODIFICATION ONLY TO GET TRANSPARENT BACKGROUND AND NOT MATERIAL DART GREY
+
 A lightweight flutter package to simplify the creation of a miniplayer by providing a builder function with the current height and percentage progress. The widget responds to tap and drag gestures and is highly customizable.
 **What is a miniplayer?**
 Miniplayers are commonly used in media applications like Spotify and Youtube. A miniplayer can be expanded and minified and remains on the screen when minified until dismissed by the user.
