@@ -60,7 +60,7 @@ class Miniplayer extends StatefulWidget {
     required this.builder,
     this.curve = Curves.easeOut,
     this.elevation = 0,
-    this.backgroundColor,
+    this.backgroundColor = Colors.transparent,
     this.valueNotifier,
     this.duration = const Duration(milliseconds: 300),
     this.onDismiss,
@@ -207,6 +207,8 @@ class _MiniplayerState extends State<Miniplayer> with TickerProviderStateMixin {
                         );
                       },
                       child: Material(
+                        color: Colors.transparent, // Transparent bg
+
                         child: Container(
                           constraints: BoxConstraints.expand(),
                           child: widget.builder(height, _percentage),
