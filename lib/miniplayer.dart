@@ -61,7 +61,7 @@ class Miniplayer extends StatefulWidget {
     this.curve = Curves.easeOut,
     this.elevation = 0,
     this.miniBackgroundColor = Colors.white,
-    this.backgroundColor = Colors.black12,
+    this.backgroundColor = Colors.transparent,
     this.valueNotifier,
     this.duration = const Duration(milliseconds: 300),
     this.onDismiss,
