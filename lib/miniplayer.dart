@@ -32,8 +32,7 @@ class Miniplayer extends StatefulWidget {
   ///Sets the background-color of the expanded miniplayer
   final Color backgroundColor;
 
-  // Sets the background of the minified miniplayer
-  final Color miniBackgroundColor;
+ 
 
   ///Option to set the animation duration
   final Duration duration;
@@ -60,7 +59,6 @@ class Miniplayer extends StatefulWidget {
     required this.builder,
     this.curve = Curves.easeOut,
     this.elevation = 0,
-    this.miniBackgroundColor = Colors.white,
     this.backgroundColor = Colors.transparent,
     this.valueNotifier,
     this.duration = const Duration(milliseconds: 300),
@@ -199,7 +197,6 @@ class _MiniplayerState extends State<Miniplayer> with TickerProviderStateMixin {
                         );
                       },
                       child: Material(
-                        color:  Color.lerp(widget.miniBackgroundColor, widget.backgroundColor, _percentage), // Transparent bg
                         child: Container(
                           constraints: BoxConstraints.expand(),
                           child: widget.builder(height, _percentage),
